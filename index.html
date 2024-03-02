@@ -3,32 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Improved HTML Layout</title>
+<title>Anime HTML Layout</title>
 <style>
     body {
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f0f0;
     }
     header, nav, main, footer, .left, .right {
         padding: 20px;
-        color: rgb(255, 255, 255);
+        color: #fff;
         text-align: center;
     }
     header {
-        background-color: #333;
+        background-color: #000;
     }
     nav {
-        background-color: #4CAF50;
+        background-color: #333;
     }
     .left, .right {
-        background-color: #FF9800;
+        background-color: #777;
     }
     main {
-        background-color: #2196F3;
+        background-color: #444;
     }
     footer {
-        background-color: #333;
+        background-color: #000;
     }
     .container {
         display: flex;
@@ -39,6 +40,8 @@
     .content {
         flex: 1;
         min-width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
     aside, main {
         flex-basis: calc(50% - 20px);
@@ -47,26 +50,30 @@
 </head>
 <body>
     <header>
-        Header
+        <h1>Anime Header</h1>
     </header>
     <nav>
-        Navigation Menu
+        <h2>Anime Navigation Menu</h2>
     </nav>
     <div class="container">
         <aside class="left content">
-            Side Content
+            <h2>Anime Side Content</h2>
+            <img src="https://i.imgur.com/CcXuIMF.jpg" alt="Anime Image" style="max-width: 100%;">
         </aside>
         <main class="content">
-            Main Content
+            <h2>Anime Main Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ligula eu mauris eleifend aliquam. Duis vel augue condimentum, lobortis magna et, consequat tortor.</p>
         </main>
         <aside class="right content">
-            Side Content
+            <h2>Anime Side Content</h2>
+            <img src="https://i.imgur.com/CcXuIMF.jpg" alt="Anime Image" style="max-width: 100%;">
         </aside>
     </div>
     <footer>
-        Footer
+        <h2>Anime Footer</h2>
     </footer>
 </body>
 </html>
+
 
 
