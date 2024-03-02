@@ -3,85 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Advanced HTML Layout</title>
+<title>Improved HTML Layout</title>
 <style>
     body {
         margin: 0;
         padding: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f2f2f2;
-        color: #333;
+        font-family: Arial, sans-serif;
     }
-    header, nav, main, footer, aside.left, aside.right {
+    header, nav, main, footer, .left, .right {
         padding: 20px;
+        color: rgb(255, 255, 255);
         text-align: center;
     }
     header {
-        background-color: #1a1a1a;
-        color: #fff;
+        background-color: #333;
     }
     nav {
-        background-color: #333;
-        color: #fff;
+        background-color: #4CAF50;
     }
-    aside.left, aside.right {
-        background-color: #444;
-        color: #fff;
+    .left, .right {
+        background-color: #FF9800;
     }
     main {
-        background-color: #ddd;
+        background-color: #2196F3;
     }
     footer {
-        background-color: #1a1a1a;
-        color: #fff;
+        background-color: #333;
     }
     .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
     }
     .content {
-        padding: 30px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
+        flex: 1;
+        min-width: 300px;
     }
-    .content:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    aside, main {
+        flex-basis: calc(50% - 20px);
     }
 </style>
 </head>
 <body>
     <header>
-        <h1>Techy Header</h1>
+        Header
     </header>
     <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-        </ul>
+        Navigation Menu
     </nav>
     <div class="container">
         <aside class="left content">
-            <h2>Side Content 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla lacinia.</p>
+            Side Content
         </aside>
         <main class="content">
-            <h2>Main Content</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod velit vitae fermentum.</p>
+            Main Content
         </main>
         <aside class="right content">
-            <h2>Side Content 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor metus.</p>
+            Side Content
         </aside>
     </div>
     <footer>
-        <p>&copy; 2024 Techy Design. All rights reserved.</p>
+        Footer
     </footer>
 </body>
 </html>
+
 
